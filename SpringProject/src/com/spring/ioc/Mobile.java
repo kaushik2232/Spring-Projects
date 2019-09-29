@@ -17,12 +17,13 @@ public class Mobile {
 //		Sim sim = new Airtel();
 //		sim.calling();
 //		sim.data();
-		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-		System.out.println("config loaded");
+		
 //		Airtel air = context.getBean("airtel", Airtel.class);
 //		air.calling();
 //		air.data();
 		
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+		System.out.println("config loaded");
 		Sim sim = context.getBean("sim", Sim.class);
 		sim.calling();
 		sim.data();
