@@ -7,6 +7,10 @@
 
 <bean id = "student" class = "com.spring.DI.Student">
 	<property name = "StudentName" value = "kaushik"/>
+	<constructor-arg name = "id" value = "99"/>
+	<constructor-arg name = "Email" value = "m@gmail.com"/>
+	<property name = "mobileno" value = "6789"/>
+	
 </bean>
 
 </beans> 
